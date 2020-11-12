@@ -74,3 +74,33 @@ footer {
     background-color: yellowgreen;
     border-radius: 25px;
 }
+
+.flex-ct {
+    display: flex;
+    align-items: center;
+}
+
+.flex-ct > .dropdown {
+    color: white;
+    flex-grow: 1;
+    background: tomato;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 14px;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    background: lightgray;
+}
+
+.dropdown-content > a {
+    display: block;
+}
